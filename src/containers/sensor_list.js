@@ -8,9 +8,10 @@ import { connect } from 'react-redux';
 import Chart from '../components/chart';
 import GoogleMap from '../components/google_map';
 
-class SensorList extends Component {
+class SensorsList extends Component {
 
     renderList() {
+        console.log("SensorsList renderList()")
         return this.props.sensors.map((sensor) => {
            return (
              <li key={sensor.id}
@@ -47,5 +48,5 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(SensorList);
+export default connect(mapStateToProps)(SensorsList);
 
