@@ -22,7 +22,7 @@ class SensorForm extends Component {
 
 function mapStateToProps(state) {
     return {
-        activeSensor: state.activeSensor
+        activeSensor: state.selectSensor
     };
 }
 
